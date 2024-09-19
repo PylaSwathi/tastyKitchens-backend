@@ -1,0 +1,18 @@
+jwt:
+  secret: 'fjrrfrhyfugrfgrdhflidjfildshrfkgjhtghtfjkghskjdhfndskjdsfdsf'
+  expiration: 86400000  # 1 day in milliseconds
+server:
+  port: 9092
+spring:
+  application:
+    name: tastyKitchens
+  datasource:
+    url: jdbc:mysql://localhost:3306/tastyKitchens
+    username: root
+    password: pass@word1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
